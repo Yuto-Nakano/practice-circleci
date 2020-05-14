@@ -6,8 +6,6 @@ jobs:
       - image: circleci/node:10
     steps:
       - checkout
-      - run: git checkout test
-      - run: git merge  master
       - run: git push origin test
 workflows:
   build-and-deploy:
